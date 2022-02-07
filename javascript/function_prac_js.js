@@ -8,22 +8,43 @@
 *   -> Test to ensure your code is working as expected
 * */
 
-function getName(){
+//function getName(){
 
-    return prompt("what your name?")
+//    return prompt("what your name?")
 
-}
-function showName(username){
+//}
+//function showName(username){
 
-    alert("Your name is " + username);
-}
-showName(getName());
-
-
+//    alert("Your name is " + username);
+//}
+//showName(getName());
 
 
 //Make a function named isLowerCase(letter) which returns true if the parameter is lowercased; otherwise it returns false
+function isLowerCase(letter) {
+    return letter == letter.toLowerCase() && letter != letter.toUpperCase();
+}
+
+console.log("Hey", isLowerCase("Hey"));
+console.log("HEY", isLowerCase("HEY"));
+console.log("hey", isLowerCase("hey"));
+
 //Write a function named double(n) that returns a number times two
+function double(n) {
+    return n * 2;
+}
+console.log( "Calculate 2 x 2 = " ,double(2));
+console.log( "Calculate 2 x 3 = " ,double(3));
+console.log( "Calculate 2 x 1 = " ,double  (1));
+
 //Make a function named areIdentical(input1, input2) that returns true if both inputs are same value and data type; otherwise it returns false.
 //edited)
+function areIdentical(input1,input2) {
 
+    return input1 === input 2
+}
+
+console.log("", areIdentical("one", "one"));
+console.log("", areIdentical("ONE","OnE"));
+console.log("", areIdentical("2","2"));
+console.log("", areIdentical("one", 1));
