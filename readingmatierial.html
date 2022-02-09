@@ -1,0 +1,37 @@
+Software Testing is a technique to determine if software is functioning correctly.
+Testing has two goals:
+1. finds defects (i.e., bugs)
+2. builds confidence that the software works correctly
+Why is finding bugs important? Software failure can cause:
+1. Loss of money
+2. Loss of reputation
+3. Loss of life
+4. maybe more???
+All software has bugs. Bugs should be found in development, not when it is in the hands of the end-users. Good testing helps that happen.
+Why is confidence in the software important? Lack of confidence in your product kills morale, which can kill the project.
+Testing requires the following:
+1. a set of items to be tested (e.g., functions, screens)
+2. a known set of inputs for each item to test
+3. the expected results for each item to test
+4. the ability to execute each item with the necessary inputs and compare the actual result to the expected result
+A test passes when the actual result is the same as the expected result (sometimes within a known tolerance). And a test fails when they are not.
+There are different types of testing:
+1. Unit testing: tests software "in the small", at the function-level. Unit tests are written by the programmers and accompany the software code
+2. Integration testing: tests how software components work together (components are sometimes made by completely different teams)
+3. System testing: tests software in an environment closer to how it will operate in production
+4. Regression testing: testing software again when it changes to determine if the change broke something
+Some interesting cases of insufficient testing:
+1. https://blog.cdemi.io/analyzing-software-failure-on-the-nasa-mars-climate-orbiter/
+2. https://en.wikipedia.org/wiki/Therac-25
+How to test?
+A very good question. There is no such thing as exhaustive testing (i.e., testing everything). Software is too complex for that.
+In general, write tests that check:
+1. the normal or valid path of execution (i.e., when all inputs are valid)
+2. boundaries of inputs (really large values, really small values, null, empty strings)
+3. all error checking paths (e.g., invalid file name, alphanumeric instead of numeric values)
+How many tests to write?
+A very good question. Very wise people say that a programmer should spend as much time writing tests, as he/she does writing code. Others say that half of the time spent developing software should be testing the software. As a starting point, try to write at least 5 tests per function parameter.
+Test automation
+Because testing is important and must be done frequently, the easier and faster it is for developers to execute the tests, the better.
+Many types of tests these days use automated tools to make re-executing the tests easy (click a button or run a script) and consistent (no forgetting some of the tests). Unit tests these days tend to be automated, which makes executing the tests over and over again easy.
+So, running the tests is no longer a problem in software development. However, coming up with enough good tests to find the important bugs is still a problem.
