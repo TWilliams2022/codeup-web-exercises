@@ -31,16 +31,19 @@ Math.floor(Math.random() * 5) + 1;
 Cannot sell you 6 cones I only have 3...  // If there are not enough cones
 Yay! I sold them all! // If there are no more cones*/
 
-var conesInInventory = Math.floor(Math.random() * 50) + 50;
-do{
-    let requestedCones = Math.floor(Math.random() * 5) + 1;
-    let sellS = conesInInventory - requestedCones;
-    if (requestedCones <= 5){
-       console.log("I have  cones left in inventory!");
+var allCones = Math.floor(Math.random() * 50) + 50;
 
+do{
+    let conesSold = Math.floor(Math.random() * 5) + 1;
+    console.log(allCones);
+    console.log("There are " + allCones + " cones left to sell!");
+    if (conesSold > allCones){
+       console.log("I can not sell you " + conesSold + " cones, becuase I have " + allCones);
+    } else {
+        console.log(conesSold + " cones are sold")
     }
     
-} while( requestedCones <= 5);
+} while( allCones > 0);
 console.log("Let's go home! :)");
 
 

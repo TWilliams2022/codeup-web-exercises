@@ -260,6 +260,7 @@ if (userNum % 2 === 0 ){
 else {
     alert("Your number is odd")
 }
+
 //plus 100
 alert("Your number plus 100 is, " + (userNum + 100))
 
