@@ -25,3 +25,17 @@ var planetsArray = planetsString.split("|");
 
 planetsString = planetsArray.join("<br>");
 console.log(planetsString);
+
+function buildPlanetUl(arrOfPlanets){
+ let newString = '<ul>'
+ for (let i = 0; i < arrOfPlanets; i++) {
+  newString += '<li>'
+  newString += arrOfPlanets[i];
+      newString += '</li>';
+
+ }
+ newString += '</ul>'
+ return newString
+}
+
+console.log(buildPlanetUl(planetsArray));
