@@ -10,11 +10,11 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
- //function sayHello(name){
-  //  return `Hello, ${name}!`
-//}
+ function sayHello(name){
+   return `Hello, ${name}!`
+}
 
-//console.log(sayHello('Tyreik'));
+console.log(sayHello('Tyreik'));
 
 /**
  * TODO:
@@ -24,8 +24,8 @@
  * console.log 'helloMessage' to check your work
  */
 
-//let helloMessage = sayHello(prompt("What is your birth name?"));
-//console.log(helloMessage);
+let helloMessage = sayHello(prompt("What is your birth name?"));
+console.log(helloMessage);
 
 
 
@@ -37,13 +37,13 @@
  * console.
  */
 
-//let myName = sayHello(prompt("What is your name?"));
-//console.log(myName);
+let myName = sayHello(prompt("What is your name?"));
+console.log(myName);
 
 
-// Don't modify the following line, it generates a random number between 1 and 3
-// and stores it in a variable named random
-//var random = Math.floor((Math.random() * 3) + 1);
+Don't modify the following line, it generates a random number between 1 and 3
+and stores it in a variable named random
+var random = Math.floor((Math.random() * 3) + 1);
 
 
 /**
@@ -63,25 +63,25 @@
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-//var random = Math.floor((Math.random() * 3) + 1);
+var random = Math.floor((Math.random() * 3) + 1);
 
-//function isTwo(number){
-//   return number === 2;
-//}
-//console.log(isTwo(random));
+function isTwo(number){
+  return number === 2;
+}
+console.log(isTwo(random));
 
 //or
 
-//function isTwo(num){
-  //  if (num == 2){
-   //     return true;
-   // }
-    //else {
-    //    return false;
-   // }
-//}
-//console.log(random);
-//console.log(isTwo(random));
+function isTwo(num){
+   if (num == 2){
+       return true;
+   }
+    else {
+       return false;
+   }
+}
+console.log(random);
+console.log(isTwo(random));
 
 
 /**
@@ -96,11 +96,11 @@
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-//function calTip (tipPerc,totalBill) {
-//   return tipPerc * totalBill;
-//}
+function calTip (tipPerc,totalBill) {
+  return tipPerc * totalBill;
+}
 
-//console.log(calTip(0.20,20))
+console.log(calTip(0.20,20))
 
 /**
  * TODO:
@@ -108,12 +108,12 @@
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-//let billS = (prompt('What is the bill?'));
-//let tipPercentagE = (prompt("Type in your qratuity: .10, .18, .30, ect...."));
+let billS = (prompt('What is the bill?'));
+let tipPercentagE = (prompt("Type in your qratuity: .10, .18, .30, ect...."));
 
-//let tipAmount = (billS * percentagE);
-//alert("By applying " + percentagE + "%, your tip should be " + tipPercent + "!");
-  // or
+let tipAmount = (billS * percentagE);
+alert("By applying " + percentagE + "%, your tip should be " + tipPercent + "!");
+  or
 
 
 
@@ -132,7 +132,7 @@
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-//var random = Math.floor((Math.random() * 3) + 1)
+var random = Math.floor((Math.random() * 3) + 1)
 
 let applyDicscount (originalPrice, discountPercent) {
     let discountAmount = originalPrice * discountPercent;
@@ -143,11 +143,11 @@ let applyDicscount (originalPrice, discountPercent) {
 //let discountP1 = .08;
 
 //function applyDiscount(originalPrice, discountP1){
- //  let discount = originalPrice * discountP1;
- //  return discount ;
-//}
+  let discount = originalPrice * discountP1;
+  return discount ;
+}
 
-//alert("You've paid " + applyDiscount(originalPrice, discountP1) + " as a tip! Thank you!");
+alert("You've paid " + applyDiscount(originalPrice, discountP1) + " as a tip! Thank you!");
 
-//or
+
 
