@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- # is like a redirect in action-->
+<form method="POST"  action="request-inspector.glitch.me">
+
+<!--    GET - USE DATA IN THE FORM TO GET SOMETHING BACK/ wont have request body but will have query string/ also shows in html/ shows server side -->
+<!--    PUT - UPDATE EXISTING DATA -->
+<!--    POST - I NEED TO MAKE NEW DATA/ posted and created on the other side ... -->
+<!--    DELETE - DELETE EXISTING DATA -->
+
+<div>
+    <label for="email-input">Email: </label>
+    <!--             TYPE has differnt values-->
+    <input id="email-input" name="email" type="email" placeholder="Please enter email">
+    </div>
+<!--     NEED name.... Name has nothing to do with ID or Type... shows output-->
+    <div>
+        <label for="password-input">Password: </label>
+    <input id="password-input" name="password" type="password" placeholder="please enter password">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+
+
+
+</body>
+</html>
