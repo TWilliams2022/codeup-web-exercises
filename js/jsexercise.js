@@ -7,13 +7,20 @@
         return true;
 }
 
-console.log(isNumber(NaN))
+console.log(isNumber(17))
+
+function isNumber(userNum){
+    return userNum % 1 === 0 || userNum % 2 === 0;
+
+}
+
+console.log(isNumber("18"));
 
 //or
 
-// function isNumber(userNum){
-//
-//     return !!parseFloat(userNum)
-//
-// }
-// console.log(isNumber(12))
+function isNumber(userNum){
+
+    return !!parseFloat(userNum)
+
+}
+console.log(isNumber(12))
