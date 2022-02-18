@@ -2,10 +2,18 @@
 
 
 
-
-    function isNumber(){
-    let userNum = parseInt(prompt("Please provide a #"));
+    function isNumber(userNum){
     if (userNum % 1 === 0 || userNum % 2 === 0)
         return true;
 }
-console.log(isNumber)
+
+console.log(isNumber(NaN))
+
+//or
+
+// function isNumber(userNum){
+//
+//     return !!parseFloat(userNum)
+//
+// }
+// console.log(isNumber(12))
