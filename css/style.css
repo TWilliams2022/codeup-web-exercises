@@ -1,5 +1,17 @@
 
-.fancy-header {
-    color: mediumpurple; /* single line comment */
+nav {
+    background-color: black;
+    color: white;
+}
 
+li {
+    list-style: none;
+}
+
+.border-element-thing{
+border-style: solid;
+    border: 2px solid black;
+}
+#Github-logo{
+    border-radius: 40%;
 }

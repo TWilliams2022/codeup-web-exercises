@@ -9,6 +9,8 @@
 
 console.log(isNumber(17))
 
+//or
+
 function isNumber(userNum){
     return userNum % 1 === 0 || userNum % 2 === 0;
 
