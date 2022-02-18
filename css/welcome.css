@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+#Center-me{
+    text-align: center;
+}
+
+body {
+    background-color: lightblue;
+    background-image: url("../img/pexels-lukas-296242.jpg");
+    background-blend-mode: hue ;
+    font-family: 'Redressed', cursive;
+}
+
+li{
+    list-style: square;
+}
+
+table, th, td {
+    border: 1px solid #666;
+    padding: 10px ;
+}
+
+a:any-link{
+    color: ghostwhite;
+}

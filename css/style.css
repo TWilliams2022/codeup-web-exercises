@@ -8,10 +8,10 @@ li {
     list-style: none;
 }
 
-.border-element-thing{
-border-style: solid;
+.border-element-thing {
     border: 2px solid black;
 }
-#Github-logo{
+
+#Github-logo {
     border-radius: 40%;
 }
