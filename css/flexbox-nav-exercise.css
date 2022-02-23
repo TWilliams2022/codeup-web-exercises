@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Redressed&display=swap')
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    background: cadetblue;
+}
+
+nav a
+{
+    padding: 1em;
+}
+
+a
+{
+    display: inline-block;
+}
+
+li a {
+    justify-content: center;
+    min-height: 100 hv;
+    align-items: center;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10%;
+    border-radius: 10px ;
+    background: black;
+}
+.links
+{
+    list-style: none;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.links li
+{
+    display: inline-block; /*puts the list items in a column*/
+    padding: 0 15px;
+}
+.links li a
+{
+transition: all 0.5s ease 0s;
+}
+
+.links li a:hover
+{
+    color: red;
+}
+
+.sections li
+{
+    display: inline-block; /*puts the list items in a column*/
+    padding: 0 15px;
+}
+.sections li a
+{
+    transition: all 0.5s ease 0s;
+}
+
+.sections li a:hover
+{
+    color: red;
+}
+
+#Github-logo {
+
+    border-radius: 25%;
+    width: 100px;
+    height: 70px;
+
+
