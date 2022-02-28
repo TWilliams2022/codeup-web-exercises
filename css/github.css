@@ -1,7 +1,37 @@
 
-nav {
+*{
+    width: auto;
+    margin: 0px;
+    padding: 7px;
+}
+
+.codeimage
+{
+    display: flex;
+    justify-content: left;
+}
+.repos
+{
+    display: flex;
+    justify-content: center;
+}
+
+main
+{
+    display: flex;
+}
+
+
+.navigation {
+    display: flex;
     background-color: black;
     color: white;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+.listthing
+{
+display: flex;
 }
 
 li {
@@ -9,10 +39,28 @@ li {
 }
 
 .border-element-thing {
-    border: 2px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+    /*display: flex;*/
+    justify-content: space-evenly ;
+}
+h2
+{
+    background: lightblue;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #Github-logo {
     border-radius: 40%;
     width: 5%;
+}
+
+table
+{
+    display: flex;
 }

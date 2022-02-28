@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-image: ;
+}
+
+
+/*the div that holds the NAVBAR things set the dimensions for items to sit in*/
+.container {
+    width: 100%;
+    min-height: 100vh;
+    /*sets the padding on the left ... basically space away from left ending of page*/
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/*the div holding the items in the NAVBAR only needed to flex once*/
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*Editing the class of the img logos*/
+.logo {
+    width: 150px;
+    cursor: pointer;
+    margin: 9px;
+    height: 80px;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+
+}
+
+nav {
+    /*flex 1 moves right icon to far right of page*/
+    flex: 1;
+    /*sends txt to the right of the page by icon*/
+    text-align: right;
+}
+
+/*focuses on the list section*/
+nav ul li {
+    list-style-type: none;
+    /*inline block puts the list in a row*/
+    display: inline-block;
+    /*spaces the list away from eachother on the right side between*/
+    margin-right: 30px;
+}
+
+/*deals with the text in the a tag*/
+nav ul li a {
+    color: darkblue;
+    font-size: 17px;
+    /*takes away the underlined hyperlink*/
+    text-decoration: none;
+}
+
+/*add the hover effect*/
+nav ul li a:hover {
+    color: mediumpurple;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2 {
+    font-size: 30px;
+    color: darkblue;
+    font-weight: ;
+}
+
+.col-1 h3 {
+    font-size: 30px;
+    font-weight: 100;
+    color: mediumpurple;
+    font-style: italic;
+    margin: 20px 0 10px;
+}
+
+.col-1 p {
+    margin: 30px 0;
+    font-size: 20px;
+}
+button
+{
+    /*button format */
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: darkblue;
+}
+
+button:hover
+{
+    color: mediumpurple;
+    cursor: pointer;
+
+    /*changes the button color to multiple colors*/
+    background: linear-gradient( to right, darkblue, mediumpurple) ;
+}
+
+#smp
+ {
+    color: slategrey;
+ }
