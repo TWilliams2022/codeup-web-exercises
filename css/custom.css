@@ -1,0 +1,16 @@
+
+*{
+    padding: 2px;
+    margin: 0px;
+}
+
+.jumbotron {
+    width: auto;
+}
+
+h5 {
+    width: auto;
+    height: 40px;
+    background-color: #85C1E9;
+    padding: 8px;
+}

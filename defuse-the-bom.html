@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Defuse the BOM</title>
+</head>
+<body>
+
+<h2 id="message">This BOM will self destruct in <span id="timer">5</span> seconds...</h2>
+<button id="defuser">Defuse the BOM</button>
+
+<script>
+    (function () {
+        "use strict";
+
+        var detonationTimer = 5;
+
+        //********** "id" in the <h2> is in the document.getelementbyis and displays 5 for detonation timer counting down
+
+        // TODO: This function needs to be called once every second
+        function updateTimer() {
+            if (detonationTimer == 0) {
+                alert('EXTERMINATE!');
+                document.body.innerHTML = '';
+            } else if (detonationTimer > 0) {
+                document.getElementById('timer').innerHTML = detonationTimer;
+            }
+
+            detonationTimer--;
+        }
+
+        // ********* takes update timers fuction and uses 1 secs in the function
+        // ********** also using 1000ms FOR once every second
+        // ********* made a new variable to hold timeout and updatetimer from the above function
+
+        let newTimer = setInterval(updateTimer, 1000);
+
+        // TODO: When this function runs, it needs to
+        // cancel the interval/timeout for updateTimer()
+        function defuseTheBOM() {
+
+            // *****added a new variable to hold setinterval... then added newtimer into clearinterval
+
+            let newClear = clearInterval(newTimer);
+            alert("Clear!!");
+        }
+
+        // Don't modify anything below this line!
+        //
+        // This causes the defuseTheBOM() function to be called
+        // when the "defuser" button is clicked.
+        // We will learn about events in the DOM lessons
+
+        // ******* the id dufuser is attached to the button tag and the this is how to make it work
+        var defuser = document.getElementById('defuser');
+        defuser.addEventListener('click', defuseTheBOM);
+    })();
+</script>
+</body>
+</html>

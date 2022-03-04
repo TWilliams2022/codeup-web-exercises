@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Bootstrap!</title>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><em><strong>Pizza World</strong></em></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto form-inline">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Order Online <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item form">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    </div>
+            <li>
+                <div>
+                    <input type="text" class="form-control " placeholder="Zip code" aria-label="Username"
+                           aria-describedby="basic-addon1">
+                </div>
+            </li>
+            <div>
+                <button type="button" class="btn btn-secondary inline">Search Stores Near!</button>
+            </div>
+
+    </div>
+
+
+    </ul>
+    <div>
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                Search
+            </button>
+        </form>
+    </div>
+    </div>
+</nav>
+<div class="jumbotron" d-sm-none style="background-image:url(https://us.123rf.com/450wm/vasiliybudarin/vasiliybudarin1902/vasiliybudarin190200047/117517269-tasty-pepperoni-pizza-with-basil-on-brown-concrete-background-top-view-of-hot-pepperoni-pizza-with-c.jpg?ver=6);">
+    <div class="container for-welcome">
+        <h1 class="text-center text-white-50 bg-transparent">Welcome to Pizza World</h1>
+    </div>
+</div>
+<h2>Build your own pizza!</h2>
+
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#"><h6><span class="badge badge-secondary">1</span>Size &
+            Crust</h6></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#"><h6><span class="badge badge-secondary">3</span>Cheese &
+            Sauce</h6></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#"><h6><span class="badge badge-secondary">3</span>Toppings
+        </h6></a>
+
+    </li>
+</ul>
+<section class="border">
+    <div class="card" style="width: auto;">
+        <div class="card-body">
+            <h5 class="card-title">Choose Size & Crust</h5>
+        </div>
+
+        <div class="card" style="width: auto;">
+            <div class="card-header">
+                Hand Tossed
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Garlic seasoned crust w/ rich, buttery taste.</li>
+
+            </ul>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    <strong>Small (10")</strong>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    <strong>Medium (12")</strong>
+                </label>
+            </div>
+        </div>
+        <div class="card" style="width: auto;">
+            <div class="card-header">
+                Crispy Thin
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Think enough for the ultimate crunch</li>
+
+            </ul>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    <strong>Medium (12")</strong>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    <strong>Large (14")</strong>
+                </label>
+            </div>
+        </div>
+        <footer>
+            <p class="text-right">
+                <button type="button" class="btn btn-primary">Next Step ></button>
+            <p>
+        </footer>
+</section>
+
+<br>
+
+<div class="card" style="width: auto;">
+    <div class="card-body">
+        <h5 class="card-title">Choose Cheese & Sauce</h5>
+    </div>
+
+    <div class="card" style="width: auto;">
+        <div class="card-header">
+            <strong>Cheese</strong>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">How much?</li>
+            <div class="dropdown" width="auto">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Choose..
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">LIGHT</a></li>
+                    <li><a href="#">NORMAL</a></li>
+                    <li><a href="#">EXTRA</a></li>
+                    <li><a href="#">DOUBLE</a></li>
+                </ul>
+            </div>
+        </ul>
+
+        <br>
+
+        <div class="card" style="width: auto;">
+            <div class="card-header">
+                <strong> Sauce</strong>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">What type?</li>
+                <div class="dropdown" width="auto">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Choose..
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Tomato Sauce</a></li>
+                        <li><a href="#">Marinara Sauce</a></li>
+                        <li><a href="#">Alfredo Sauce</a></li>
+                        <li><a href="#">BBQ Sauce</a></li>
+                    </ul>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">How much?</li>
+                        <div class="dropdown" width="auto">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                Choose..
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Light</a></li>
+                                <li><a href="#">Normal</a></li>
+                                <li><a href="#">Extra</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
