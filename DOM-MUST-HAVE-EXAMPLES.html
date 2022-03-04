@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--****************************** 1ND EXAMPLE-->
+
+<!--<h1>List One</h1>-->
+<!--<ul>-->
+<!--    <li class="odd list-one-item">List 1, Item 1</li>-->
+<!--    <li class="even list-one-item">List 1, Item 2</li>-->
+<!--</ul>-->
+<!--<h1>List Two</h1>-->
+<!--<ul>-->
+<!--    <li class="odd list-two-item">List 2, Item 1</li>-->
+<!--    <li class="even list-two-item">List 2, Item 2</li>-->
+<!--</ul>-->
+
+<!--<script>-->
+<!--    "use strict";-->
+<!--    (function () {-->
+<!--        // Get all elements with class 'even'-->
+<!--        var evenElements = document.getElementsByClassName('even');-->
+
+<!--        // Print the first element-->
+<!--        console.log(evenElements[0]); // Prints li.even.list-one-item-->
+
+<!--        // Print all elements-->
+<!--        for (var i = 0; i < evenElements.length; i++) {-->
+<!--            console.log(evenElements[i]);-->
+<!--        }-->
+
+<!--        // Prints:-->
+<!--        // li.even.list-one-item-->
+<!--        // li.even.list-two-item-->
+<!--        var listItems = document.getElementsByTagName('li');-->
+
+<!--        // Print the first list item-->
+<!--        console.log(listItems[0]); // Prints li.odd.list-one-item-->
+
+<!--        // Print all the list items-->
+<!--        for (var i = 0; i < listItems.length; i++) {-->
+<!--            console.log(listItems[i]);-->
+<!--        }-->
+
+<!--        // Prints-->
+<!--        // li.odd.list-one-item-->
+<!--        // li.even.list-one-item-->
+<!--        // li.odd.list-two-item-->
+<!--        // li.even.list-two-item-->
+<!--        //-->
+<!--        // *********************-->
+
+<!--        // In the example , we can see that the document object has-->
+<!--        // a collection named forms. Forms in the document are accessible by name via the forms collection,-->
+<!--        // and then form inputs are accessible by name within a specified form. We also see that you can get a value for-->
+<!--        // a form input by using the value property.-->
+
+<!--        // There are other collections available within the document object,-->
+<!--        // like anchors and images, but we will not be using them in this course.-->
+
+<!--</script>-->
+
+<!--****************************** 2ND EXAMPLE-->
+
+<!--<form name="login">-->
+<!--    <div>-->
+<!--        <label for="username">Username</label>-->
+<!--        <input id="username" name="username" type="text">-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <label for="password">Password</label>-->
+<!--        <input id="password" name="password" type="password">-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <input type="submit">-->
+<!--    </div>-->
+<!--</form>-->
+<!--<script>-->
+<!--    "use strict";-->
+<!--    (function() {-->
+<!--        // get the "username" input-->
+<!--        var usernameInput = document.forms.login.username;-->
+
+<!--        // log the value of the "username" input-->
+<!--        console.log(usernameInput.value);-->
+<!--    })();-->
+<!--</script>-->
+
+<!--**********EXAMPLE 3-->
+
+<!--you can see how the innerHTML property can be used to-->
+<!--retrieve or update the inner HTML of an element.-->
+<!--The property (innerText) behaves in a similar manner,-->
+<!--but it ignores any HTML tags. This can be useful if are just concerned with the text a user sees,-->
+<!--or if we do not want to allow them to inject HTML tags in our page.-->
+<!--This can be retrieved or updated via the innerHTML property on the element you are working with-->
+
+<!--<h1 id="main-heading">Hello World!</h1>-->
+<!--<div id="main-section">-->
+<!--    <p>Paragraph 1</p>-->
+<!--    <p>Paragraph 2</p>-->
+<!--</div>-->
+<!--<script>-->
+<!--    "use strict";-->
+<!--    (function() {-->
+<!--        // Get the main heading h1 by id-->
+<!--        var mainHeading = document.getElementById('main-heading');-->
+
+<!--        console.log(mainHeading.innerHTML); // Prints Hello World!-->
+
+<!--        // Assign a new value to the inner HTML of the main heading-->
+<!--        mainHeading.innerHTML = "Hello Codeup!";-->
+
+<!--        console.log(mainHeading.innerHTML); // Prints Hello Codeup!-->
+
+<!--        // Get the main section div by id-->
+<!--        var mainSection = document.getElementById('main-section');-->
+
+<!--        console.log(mainSection.innerHTML);-->
+<!--        // Prints-->
+<!--        // <p>Paragraph 1</p>-->
+<!--        // <p>Paragraph 2</p>-->
+<!--    })();-->
+<!--</script>-->
+
+<!--*******************EXAMPLE 4-->
+
+
+
+
+
+
+</body>
+</html>
