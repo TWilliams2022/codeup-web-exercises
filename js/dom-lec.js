@@ -4,7 +4,7 @@ let navContent = document.getElementById("navContent");
 // log the thing to make sure you got the thing
 // console.log(navContent);
 //
-// console.log(navContent.children);
+// console.log(navContent.children);"
 
 // create an element
 let nameElement = document.createElement("p");

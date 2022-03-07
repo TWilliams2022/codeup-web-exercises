@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+
+body {
+    background: #593e2c;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+span {
+    font-family: 'Courgette', cursive;
+}
+
+/*********** sun animation*/
+
+.element {
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    animation: pulse 60s ease infinite alternate,
+    nudge 100s linear infinite alternate;
+    border-radius: 100%;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        background-color: navajowhite;
+    }
+    50% {
+        background-color: brown;
+    }
+}
+
+@keyframes nudge {
+    0%, 100% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(1400px, 0px);
+    }
+
+    80% {
+        transform: translate(1400px, 0px);
+    }
+}
+
+
+/*Created by grabbig the [span] in the [h1] & and added [table cell], [animation], [padding & margin 0].*/
+/*Made sure add animation - animate 2s [linear infinite - which continues to loop the animation] */
+/*Grabbed each [child] of the span and made a [animation delay - which delays the time that each letter would glow]*/
+
+/**********************NAME animations*/
+h1 span {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 2s infinite linear;
+
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0.17s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: 1.75s;
+}
+
+h1 span:nth-child(9) {
+    animation-delay: 2s;
+}
+
+h1 span:nth-child(10) {
+    animation-delay: 2.20s;
+}
+
+/*Keyframes animates the text..*/
+/*Set the color of the glow*/
+/*set how you would like the glow to look ex. blur*/
+
+@keyframes animate {
+
+    0%, 100% {
+        color: saddlebrown;
+        filter: blur(30px);
+        text-shadow: 0 0 10px #b7a295,
+        0 0 20px #b7a295,
+        0 0 40px #b7a295,
+        0 0 80px #b7a295,
+        0 0 120px #b7a295,
+        0 0 200px #b7a295,
+        0 0 300px #b7a295,
+        0 0 400px #b7a295;
+
+    }
+    5%, 95% {
+        color: antiquewhite;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+
+}
+
+/**********************NAME animations STOP*/
+
+/************************* WAVES start here / animation*/
+
+img {
+    width: 100%;
+    height: 100px;
+    mix-blend-mode: multiply;
+}
+
+section {
+    /*try and see what it looks like fixed*/
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes animate1 {
+
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position: 1000px;
+    }
+
+}
+
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("/img/wave.png");
+    background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+    z-index: 1000;
+    animation: animate1 30s linear infinite;
+    -webkit-animation: animate1 30s linear infinite;
+    opacity: .9;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2 {
+    z-index: 999;
+    animation: animate2 15s linear infinite;
+    -webkit-animation: animate2 15s linear infinite;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+@keyframes animate2 {
+
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position: 1000px;
+    }
+
+}
+
+section .wave.wave3 {
+    z-index: 998;
+    animation: animate3 5s linear infinite;
+    -webkit-animation: animate3 5s linear infinite;
+    opacity: 0.2;
+    animation-delay: -3s;
+    bottom: 15px;
+
+}
+
+@keyframes animate3 {
+
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position: 1000px;
+    }
+
+}
