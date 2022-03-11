@@ -15,20 +15,70 @@
  INSERT JAVASCRIPT CODE SAMPLE HERE
 
  }); */
+//
+// $(document).ready(function () {
+//     prompt("How old are you?");
+//     alert("I'm ready!!!");
+// });
+//
+// $(document).ready(function () {
+//     alert("I'm ready!!!");
+// });
+// var contents = $('#codeup').html();
+// alert(contents);
+//
+// $('.important').css('background-color', 'yellow');
+//
+// $('.newclass').css('color','purple');
+// $('li,p,h1').css('background-color','purple');
+// $('li').css('font-size', '20px');
+// $('.codeup').css('border', '1px solid green');
 
-$(document).ready(function () {
-    prompt("How old are you?");
+
+// alerting contents
+
+// $(document).ready(function () {
+//    let h2 = $('#h2');
+//     alert(h2.html());
+// });
+
+
+
+$(document).ready(function(){
+
+    $('h1').click(function (){
+        $('h1').css('background-color','red');
+    })
+
 });
 
-$(document).ready(function () {
-    alert("I'm ready!!!")
+$(document).ready(function(){
+
+    $('p').dblclick(function (){
+        $('p').css("fontSize", "20px");
+    })
+
 });
-var contents = $('#codeup').html();
-alert(contents);
 
-$('.important').css('background-color', 'yellow');
+$(document).ready(function(){
 
-$('.newclass').css('color','purple');
-$('li,p,h1').css('background-color','purple');
-$('li').css('font-size', '20px');
-$('.codeup').css('border', '1px solid green');
+    $('li').hover(function (){
+        $('li').css("color", "red");
+    })
+
+});
+
+
+
+// function with button inside of the fucntion which has a class that
+//     activates with the button is clicked
+
+// <script>
+// $(document).ready(function(){
+//     $(".btncss").click(function(){
+//         $(".paracss").css({"color":"#000","padding":"10px","background":"yellow","border":"3px solid #ccc"});
+//     });
+// });
+// </script>
+// <button class="btncss">Click to Apply Multiple Style</button>
+// <p class="paracss">This is a paragraph.</p>
