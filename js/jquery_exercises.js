@@ -69,7 +69,6 @@ $(document).ready(function(){
 });
 
 
-
 // function with button inside of the fucntion which has a class that
 //     activates with the button is clicked
 

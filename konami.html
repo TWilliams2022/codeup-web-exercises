@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+
+    "use strict";
+
+    $(document).ready(function (){
+
+        let myKanomi = [37,39,38,40,82,50,76,50]; /*left,right,up,down,r,2,l,2*/
+        let kanomiPosition = 0;
+
+        $(document).keyup(function(e){
+            console.log(e.keyCode);
+            let expectedKey = myKanomi[kanomiPosition];
+            let keyPressed = e.keyCode;
+
+            if  (expectedKey === keyPressed ){
+                kanomiPosition++;
+                if (kanomiPosition === myKanomi.length) {
+                    alert('Cheat Activated.....')
+                    alert('+30 lives');
+                    $('h1').css('color','red');
+                    kanomiPosition = 0;
+                }
+                // else{
+                //     kanomiPosition = 0;
+                // }
+
+            }
+        });
+
+    });
+
+
+
+</script>
+</body>
+</html>
