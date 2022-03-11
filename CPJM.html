@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
-    <link rel="stylesheet" href="css/Coffee-project-mock.css">
+    <link rel="stylesheet" href="css/cpjm.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
             integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
             crossorigin="anonymous"></script>
@@ -17,17 +17,6 @@
 
 <body>
 
-<!--<nav class="navbar navbar-light bg-light">-->
-<!--    <div class="container-fluid row">-->
-<!--        <a class="navbar-brand">-->
-<!--            <h1 class="d-inline-block align-text-top">-->
-<!--                <span>W</span><span>A</span><span>V</span><span>Y</span><span>-</span><span>B</span><span>E</span><span>A</span><span>N</span><span>™</span>-->
-
-<!--            </h1>-->
-<!--        </a>-->
-<!--    </div>-->
-
-<!--</nav>-->
 
 <!--NAVIGATION START-->
 
@@ -61,7 +50,7 @@
             <a href="#" class="text-xl hover:text-pink-500 duration-500">BLOG'S</a>
         </li>
 
-        <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+        <button class="bg-pink-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-brown-500 rounded ">
             Get started
         </button>
         <h2 class=""></h2>
@@ -70,6 +59,34 @@
 
 <!--NAVIGATION STOP-->
 
+
+
+<!--
+Test message
+-->
+<div>
+    <form class=" container">
+        <label for="roast-selection"></label>
+        <select id="roast-selection">
+            <option>light</option>
+            <option>medium</option>
+            <option>dark</option>
+        </select>
+        <input id="submit" type="submit"/>
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Coffee!.." title="Type in a name">
+        <div id="myBtnContainer"></div>
+    </form>
+</div>
+
+<!--<div>-->
+<!--<div class="container card col-12" style="width: 18rem" id="coffees"></div>-->
+<!--</div>-->
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col">
+            <div class="container card col-12" style="width: 18rem" id="coffees"></div>
+        </div>
 
 
 <div class="element"><p></p></div>
@@ -85,7 +102,10 @@
 </section>
 <!--******* Coffee WAVES END********-->
 
-<script src="js/COFFEE.js"></script>
+
+        <script src="main.js"></script>
+
+
 </body>
 
 </html>

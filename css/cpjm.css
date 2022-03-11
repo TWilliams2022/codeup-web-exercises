@@ -56,14 +56,13 @@ span {
     }
 
     50% {
-        transform: translate(1400px, 0px);
+        transform: translate(1350px, 0px);
     }
 
     80% {
-        transform: translate(1400px, 0px);
+        transform: translate(1350px, 0px);
     }
 }
-
 
 /*Created by grabbig the [span] in the [h1] & and added [table cell], [animation], [padding & margin 0].*/
 /*Made sure add animation - animate 2s [linear infinite - which continues to loop the animation] */
@@ -217,7 +216,7 @@ section .wave.wave3 {
     z-index: 998;
     animation: animate3 5s linear infinite;
     -webkit-animation: animate3 5s linear infinite;
-    opacity: 0.2;
+    opacity: 0.3;
     animation-delay: -3s;
     bottom: 15px;
 
