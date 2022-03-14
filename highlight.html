@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>last demo</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+
+<button type="button">High light!</button>
+<ul>
+    <li>Linux</li>
+    <li>Apache</li>
+    <li>MySQL</li>
+    <li>PHP</li>
+    <li>Javascript</li>
+</ul>
+
+
+<script>
+    $("button").click(function (){
+        $(' ul li').each(function(index) {
+            if (index % 2 !== 0) {
+                $(this).css('background-color', '#FF0');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

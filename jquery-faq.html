@@ -4,12 +4,50 @@
     <meta charset="UTF-8">
     <title> JQuery Faq</title>
     <style>
+        .highlight {
+            background-color: yellow;
+        }
+
         .invisible {
             visibility: hidden;
         }
+        div:nth-child(1){
+            border-radius: 50px;
+            background: red;
+            width: 50px;
+            height: 50px;
+            margin: 3px;
+            padding: 3px;
+        }
+        div:nth-child(2) {
+            border-radius: 50px;
+            background: aqua;
+            width: 50px;
+            height: 50px;
+            margin: 3px;
+            padding: 3px;
+        }
+        div:nth-child(3) {
+            border-radius: 50px;
+            background: lawngreen;
+            width: 50px;
+            height: 50px;
+            margin: 3px;
+            padding: 3px;
+        }
+
+
+
     </style>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
+
+
+<div></div>
+<div></div>
+<div></div>
+
 <p>Nathional Park Faqs</p>
 
 <dl>
@@ -44,24 +82,82 @@
     <dd class="invisible">Feed the wild animals</dd>
 </dl>
 
+<button type="button">High light!</button>
+
+<h3 id="national-parks-heading">National Parks</h3>
+
+<ul id="national-parks">
+    <li>Arches</li>
+    <li>Badlands</li>
+    <li>Carlsbad Caverns</li>
+    <li>Denali</li>
+    <li>Everglades</li>
+</ul>
+
+<h3>State Parks of Texas</h3>
+
+<ul id="state-parks-texas">
+    <li>Abilene</li>
+    <li>Big Bend</li>
+    <li>Choke Canyon</li>
+    <li>Davis Mountains</li>
+    <li>Enchanted Rock</li>
+</ul>
+
+<h3>State Parks of South</h3>
+
+<ul id="state-parks-south">
+    <li>Columbia</li>
+    <li>Harbison</li>
+    <li>Irmo</li>
+    <li>Chettee Mountains</li>
+    <li>Crazy Rock</li>
+</ul>
+
+
 <script>
     "use strict";
 
-    // $(document).ready(function () {
-    //     $('.invisible').click(function (event) {
-    //         $('.invisible').toggleClass('dd');
-    //     });
-    // });
+    $(document).ready(function () {
+        $('.invisible').click(function (event) {
+            $('.invisible').toggleClass('dd');
+        });
+    });
 
-    // $("dd").click(function (e) {
-    //     $("dd").css('visibility','visible');
+    $("dd").click(function (e) {
+        $("dd").css('visibility', 'visible');
+
+    });
+    //
+    // $("dd").addClass("invisible");
+    // $("dl").after("<button id='toggle-button' type='button'>Toggler</button>");
+    // $$("toggle-button").click(function (e) {
+    //     $("dd").toggleClass('.invisbile');
     //
     // });
 
+
+
+
+    $("button").click(function () {
+
+        $('ul li').each(function (index) {
+            if (index === 4) {
+                $(this).css('background-color', '#FF0');
+            } else if (index === 9) {
+                $(this).css('background-color', '#FF0');
+            }
+            if (index === 14) {
+                $(this).css('background-color', '#FF0');
+            }
+        });
+    });
+
+    $("h3").click(function (){
+        $('li').css('color','red');
+    });
+
 </script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.slim.js"
-        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous">
-</script>
 </body>
 </html>
