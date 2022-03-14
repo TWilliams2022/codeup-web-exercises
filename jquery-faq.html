@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> JQuery Faq</title>
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+<p>Nathional Park Faqs</p>
+
+<dl>
+    <dt>Don't .... </dt>
+    <dd class="invisible">Approach animals too closely respect their space.</dd>
+
+    <dt>Don't ....</dt>
+    <dd class="invisible">Play music to get a reaction out of the animals.</dd>
+
+    <dt>Don't ....</dt>
+    <dd class="invisible">Have your dog attack a Kangaroo.</dd>
+
+    <dt>Don't ....</dt>
+    <dd class="invisible">A giant owl-like creature.</dd>
+
+    <dt>Don't ....</dt>
+    <dd class="invisible">Litter</dd>
+
+    <dt>Don't ....</dt>
+    <dd class="invisible">Take babies or small children.</dd>
+
+    <dt>Don't ....</dt>
+    <dd class="invisible">Make sudden movements.</dd>
+
+    <dt>Don't ....</dt>
+    <dd class="invisible">Leave venture from trials</dd>
+
+    <dt>Don't ....</dt>
+    <dd class="invisible">Enter the park under the influence</dd>
+
+    <dt>Don't ....</dt>
+    <dd class="invisible">Feed the wild animals</dd>
+</dl>
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+
+    <script>
+        "use strict";
+
+        $(document).ready(function() {
+        $('.invisible').click(function(event) {
+            event.preventDefault();
+            $('.invisible').toggleClass('visibility');
+        });
+    });
+</script>
+</script>
+</body>
+</html>
