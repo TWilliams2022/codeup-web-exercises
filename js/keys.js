@@ -1,0 +1,1 @@
+const  owm_key = "4936506b3e8d9a98466e4760eddecb61"

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title> JQuery Faq</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <style>
         .highlight {
             background-color: yellow;
@@ -11,42 +12,52 @@
         .invisible {
             visibility: hidden;
         }
-        div:nth-child(1){
+
+        div:nth-child(1) {
             border-radius: 50px;
             background: red;
-            width: 50px;
-            height: 50px;
+            width: 120px;
+            height: 120px;
             margin: 3px;
             padding: 3px;
         }
+
         div:nth-child(2) {
             border-radius: 50px;
             background: aqua;
-            width: 50px;
-            height: 50px;
+            width: 120px;
+            height: 120px;
             margin: 3px;
             padding: 3px;
         }
+
         div:nth-child(3) {
             border-radius: 50px;
             background: lawngreen;
-            width: 50px;
-            height: 50px;
+            width: 120px;
+            height: 120px;
             margin: 3px;
             padding: 3px;
         }
 
-
+        img {
+            border-radius: 50px;
+            width: 110px;
+            height: 110px;
+            margin: 3px;
+            padding: 3px;
+        }
 
     </style>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
 </head>
+
 <body>
 
 
-<div></div>
-<div></div>
-<div></div>
+<div><img src="img/ps5img.png" alt=""></div>
+<div><img src="img/sailing.jpg" alt=""></div>
+<div><img src="img/controller.png" alt=""></div>
 
 <p>Nathional Park Faqs</p>
 
@@ -117,26 +128,11 @@
 
 <script>
     "use strict";
-
-    $(document).ready(function () {
-        $('.invisible').click(function (event) {
-            $('.invisible').toggleClass('dd');
-        });
-    });
-
-    $("dd").click(function (e) {
-        $("dd").css('visibility', 'visible');
-
-    });
-    //
-    // $("dd").addClass("invisible");
-    // $("dl").after("<button id='toggle-button' type='button'>Toggler</button>");
-    // $$("toggle-button").click(function (e) {
-    //     $("dd").toggleClass('.invisbile');
-    //
-    // });
-
-
+    $('dd').addClass('invisible');
+    $('dl').after('<button id="toggleButton">Toggler</button>');
+    $('#toggleButton').click(function () {
+        $('dd').toggleClass('invis');
+    })
 
 
     $("button").click(function () {
@@ -153,8 +149,8 @@
         });
     });
 
-    $("h3").click(function (){
-        $('li').css('color','red');
+    $("h3").click(function () {
+        $('li').css('color', 'red');
     });
 
 </script>
