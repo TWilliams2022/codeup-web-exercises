@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="my1stfetchweather.css">
+    <title>My 1st fetch</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<nav>
+    <h1>Weather Board</h1>
+</nav>
+
+<div class="">
+
+    <img class="mountain" src="mountain.png" alt="">
+</div>
+
+<br>
+
+<div class="sun"></div>
+
+
+<script src="js/keys.js"></script>
+
+<div id="weather"></div>
+
+<script>
+
+    //    do fetch stuff
+    //    can deleteexclude
+
+    // https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API key}
+    // append api key
+
+    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&units=imperial&appid=" + OWM_KEY)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+
+            // means to let html tags be within the body
+            let html = "";
+
+            // in order to make ul start with this
+            html += "<ul>"
+
+            // loop through daily from length of array
+            for (let i = 0; i < data.daily.length; i++) {
+                //      for (let j = 0; j < data.timezone.length ; j++) {
+
+
+                // can add more to daily[i] by using period
+                let dailytemp = data.daily[i].temp.day
+                // .temp.eve
+
+
+                // console.log to see information
+                console.log(data.daily[i].temp.day)
+                console.log(data.daily[i].temp.eve)
+                console.log(data.current.visibility)
+                console.log(data.timezone)
+                // .temp.eve
+                // adding daily temp to list
+                html += '<li> Temp: ' + dailytemp + ', Visibility: ' + data.current.visibility + ', Evening: ' + data.daily[i].temp.eve + ',   Timezone: ' + data.timezone;
+
+            }
+            // }
+            // in order to close ul end outside of loop
+            html += "</ul>"
+
+            // this is adding the html into the body because the div id="" is named weather
+            $("#weather").html(html);
+        });
+
+
+    // *******************************************************************************************************************
+
+</script>
+
+</body>
+</html>
