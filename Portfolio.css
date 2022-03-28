@@ -1,73 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
+body {
     line-height: 1.6;
 }
 
-h1{
+h1 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-p{
-    font-family: 'Josefin Sans', sans-serif;
+p {
+    font-family: 'Parisienne', cursive;
 }
 
-.reach{
+section {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+
+#name {
+    font-weight: bolder;
+    color: #8267BE;
+    margin-top: 180px;
+    font-size: xxx-large;
+    letter-spacing: 0.4em;
+}
+
+#title {
+    margin-top: 30px;
+    color: #EFFFFD;
+    font-size: xx-large;
+    margin-bottom: 50px;
+    letter-spacing: 0.4em;
+}
+
+
+
+.box h1 {
+    text-shadow: 0 0 10px #8267BE, 0 0 20px #8267BE, 0 0 40px #FFBDE6, 0 0 70px #8267BE;
+    letter-spacing: 0.3em;
+}
+
+.light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    border-radius: 10px;
+    background: #FFBDE6;
+    z-index: 2;
+    opacity: 0.9;
+    box-shadow: 0 0 20px #EFFFFD,
+    0 0 30px #FFBDE6,
+    0 0 50px #EFFFFD,
+    0 0 70px #FFBDE6,
+    0 0 90px #EFFFFD;
+    animation: animatelight 13s linear infinite;
+}
+
+@keyframes animatelight {
+    0%, 5% {
+        transform: scale(0) translateX(0);
+    }
+}
+
+.box {
     color: #EFFFFD;
     font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-section{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-#name{
-    font-weight: bolder;
-    color: #8267BE;
-    margin-top: 100px;
-    font-size: xxx-large;
-}
-#title{
-    font-weight: bolder;
-    color: #8267BE;
-    font-size: xxx-large;
-}
-
-.container{
-    width: 100%;
-    height: 100%;
-}
-
-section{
-    /*!*display: flex;*!*/
-    /*flex-direction: column;*/
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-/***************************************CARDS*******************************************/
-
-.card{
-    color: mediumpurple;
-    background-image: url("coding.jpg");
-    padding: 8rem 0 0;
-    width: 250px;
-    height: 200px;
-    place-items: center;
-}
 
 /**************************************** STARS **************************************/
 
-.takeoff{
+.takeoff {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -77,19 +96,80 @@ section{
     /*justify-self: start;*/
 }
 
-i{
+i {
     position: absolute;
     top: -250px;
-    background: #CAF0F8;
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(65, 43, 162, 1) 62%, rgba(0, 212, 255, 1) 100%);
     animation: animateStars linear infinite;
 }
 
 @keyframes animateStars {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    100%{
+    100% {
         transform: translateY(200vh);
     }
 }
 
+
+/*************************************MediaQueries*****************************/
+@media (max-width: 500px) {
+    #name {
+        font-weight: bolder;
+        color: #8267BE;
+        margin-top: 100px;
+        font-size: xxx-large;
+        letter-spacing: 0.3em;
+    }
+
+    #title {
+        margin-top: 30px;
+        color: #EFFFFD;
+        font-size: xx-large;
+        font-weight: bold;
+        margin-bottom: 50px;
+        letter-spacing: 0.3em;
+    }
+
+    i {
+        position: absolute;
+        top: -250px;
+        background: white;
+        animation: animateStars 60s linear infinite;
+    }
+
+    h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .light {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        border-radius: 10px;
+        background: #8267BE;
+        z-index: 2;
+        opacity: 0.9;
+        box-shadow: 0 0 20px #EFFFFD,
+        0 0 30px #FFBDE6,
+        0 0 50px #8267BE,
+        0 0 70px #FFBDE6,
+        0 0 90px #EFFFFD;
+        animation: animatelight 13s linear infinite;
+    }
+
+    @keyframes animatelight {
+        0%, 5% {
+            transform: scale(0) translateX(0);
+        }
+    }
+
+}
