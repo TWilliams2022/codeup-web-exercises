@@ -24,7 +24,7 @@ h1 {
     opacity: 1;
 }
 
-/*sun start*/
+/*sun start /// or whatever you want// */
 .sun {
     margin: 10px;
     height: 100px;
@@ -39,6 +39,8 @@ h1 {
     z-index: -1;
 }
 
+/*changes color of the sun*/
+
 @keyframes pulse {
     0%, 100% {
         background-color: yellow;
@@ -47,6 +49,8 @@ h1 {
         background-color: orange;
     }
 }
+
+/*moves the sun left to right// play with transform if you want the item to move differently*/
 
 @keyframes nudge {
     0%, 100% {

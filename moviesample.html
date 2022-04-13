@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>under</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+
+<!--*****************************groudon and h1*********************************************-->
+
+<div class="rock">
+    <img class="groudon" src="groudon.gif" width="800px" height="340px">
+</div>
+<div class="text">
+    <h1 class="fire">UNDERGROUND MOVIE MADNESS!!!</h1>
+</div>
+<!--*****************************groudon and h1*********************************************-->
+
+<!--
+edit movie
+-->
+<section class="vh">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-light shadow-3 p-4">
+                    <button id="addMe" class="btn btn-link btn-block border-bottom m-0">ADD MOVIE</button>
+
+                    <button id="deleteMe" class="btn btn-link btn-block border-bottom m-0">Delete Movie</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="edit-movie-form">
+        <form onsubmit="return false">
+            <label for="editTitle">New Title</label>
+            <input type="text" id="editTitle">
+
+            <!--        <label for="editRating">New Rating</label>-->
+            <!--        <input type="text" id="editRating">-->
+
+            <label for="editPoster">New Image</label>
+            <input type="text" id="editPoster">
+
+            <label for="editYear">New Year</label>
+            <input type="text" id="editYear">
+
+            <label for="editGenre">New Genre</label>
+            <input type="text" id="editGenre">
+
+            <!--        <label for="editDirector">New Director</label>-->
+            <!--        <input type="text" id="editDirector">-->
+
+            <label for="editPlot">New Plot </label>
+            <input type="text" id="editPlot">
+
+            <!--        <label for="editActors">New Actors</label>-->
+            <!--        <input type="text" id="editActors">-->
+            <button id="editBtn">Submit</button>
+        </form>
+    </div>
+
+    <!--**************************************************************************-->
+    <div id="newMovie">
+        <form>
+            <span class="pull-right clickable close-icon mr-4"><i class="fa fa-times"></i></span>
+            <label for="mTitle" pattern="[a-z]*">Movie Title</label><br>
+            <input type="text" id="mTitle" name="mTitle" required><br>
+            <label for="mRating">Movie rating</label><br>
+            <input type="text" id="mRating" name="mRating" required><br>
+
+            <label for="mPlot">Description</label><br>
+            <input type="text" id="mPlot" name="mPlot" required>
+            <div class="btns">
+                <input id="info" type="submit">
+
+                <button id="reset" type="reset">reset</button>
+            </div>
+        </form>
+    </div>
+
+    <!--
+    delete movie
+    -->
+
+    <div id="deleteOneMovie">
+        <form>
+            <span class="pull-right clickable close-icon mr-4"><i class="fa fa-times"></i></span>
+            <label for="movieid">Movie Number</label><br>
+            <input type="text" id="movieid" name="movieID" required><br>
+            <input id="delete" type="submit">
+        </form>
+    </div>
+    <section id="movies">
+        <div class="newMovie"></div>
+    </section>
+</section>
+
+<!--**************************************************************************-->
+
+<script src="https://kit.fontawesome.com/09d59239c9.js" crossorigin="anonymous"></script>
+<!--**************************************************************************-->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+<!--**************************************************************************-->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+<!--**************************************************************************-->
+
+<script src="movies.js"></script>
+
+</body>
+</html>
