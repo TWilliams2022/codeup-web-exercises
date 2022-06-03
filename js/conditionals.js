@@ -22,29 +22,29 @@
  * console.logging the function's return value
  */
 
-//function anazlyze(color) {
+function anazlyze(color) {
 
-// if (color === "blue") {
- //    console.log("My favorite color is blue!");
- //}
-  //  if (color === "red") {
-   //     console.log("red is the color of blood!");
-   // }
-   //else if (color === "orange") {
-   //     console.log("oranges are orange!");
-   // }
-   // else if (color === "green") {
-    //    console.log("Money is green!");
-   // }
-   //else if (color === "cyan") {
-    //    console.log("I don't know much about cyan")
-   // }
-//}
-//anazlyze("blue");
-//anazlyze("green");
-//anazlyze("orange");
-//anazlyze("cyan");
-//anazlyze("red");
+if (color === "blue") {
+    console.log("My favorite color is blue!");
+ }
+   if (color === "red") {
+       console.log("red is the color of blood!");
+   }
+   else if (color === "orange") {
+       console.log("oranges are orange!");
+   }
+   else if (color === "green") {
+       console.log("Money is green!");
+   }
+   else if (color === "cyan") {
+       console.log("I don't know much about cyan")
+   }
+}
+anazlyze("blue");
+anazlyze("green");
+anazlyze("orange");
+anazlyze("cyan");
+anazlyze("red");
 
 
 // Don't change the next two lines!
@@ -79,7 +79,8 @@
         console.log("I don't know much about cyan")
     }
 }
-console.log(anazlyze(randomColor)) // = string literal
+console.log(anazlyze(randomColor))
+// = string literal
 console.log(randomColor);
 */
 
