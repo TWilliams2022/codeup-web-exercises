@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/my1stfetchweather.css">
+    <link rel="stylesheet" href="my1stfetchweather.css">
     <title>My 1st fetch</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -30,11 +30,10 @@
 <div class="sun"></div>
 
 
-<script src="js/keys.js"></script>
+<script src="./keys.js"></script>
 
-<div>
-    <div id="weather"></div>
-</div>
+<div id="weather"></div>
+
 <script>
 
     //    do fetch stuff
@@ -43,7 +42,7 @@
     // https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API key}
     // append api key
 
-    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&units=imperial&appid=" + OWM_KEY)
+    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&units=imperial&appid=" + owm_key)
         .then(response => response.json())
         .then(data => {
             console.log(data)
@@ -52,7 +51,7 @@
             let html = "";
 
             // in order to make ul start with this
-            html += "<ul class='row'>"
+            html += "<ul>"
 
             // loop through daily from length of array
             for (let i = 0; i < data.daily.length; i++) {
@@ -71,7 +70,7 @@
                 console.log(data.timezone)
                 // .temp.eve
                 // adding daily temp to list
-                html += '<li> <strong>Temp: </strong>' + dailytemp + ', <strong>Visibility:</strong> ' + data.current.visibility + ', <strong>Evening:</strong> ' + data.daily[i].temp.eve + ',   <strong>Timezone:</strong> ' + data.timezone;
+                html += '<li> Temp: ' + dailytemp + ', Visibility: ' + data.current.visibility + ', Evening: ' + data.daily[i].temp.eve + ',   Timezone: ' + data.timezone;
 
             }
             // }
