@@ -1,1 +1,1 @@
-const  owm_key = "4936506b3e8d9a98466e4760eddecb61"
+const  owm_key = "ade3ffde6b90371de17acc38c5ade878"
